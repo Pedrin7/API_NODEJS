@@ -55,7 +55,7 @@ app.put('/atualizar/:id', function(req,res){
     }
 })
 
-app.delete('/deletar/id:', function(req,res){
+app.delete('/deletar/:id', function(req,res){
     const id = req.params.id
     
     const novaLista = lista.filter(function(item){
